@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Amz_HomePage {
@@ -32,23 +33,36 @@ public class Amz_HomePage {
 	@FindBy(xpath="//input[@id='editProfileNameInputId']")
 	WebElement input;
 	
-	@FindBy(xpath="//input[@class='a-button-input']")
+	@FindBy(xpath="(//input[@class='a-button-input'])[2]")
 	WebElement btn1;
 	
 	@FindBy(id="twotabsearchtextbox")
 	WebElement searchBar;
 	
-	@FindBy(xpath="//span[text()='Shoes']")
+	@FindBy(linkText="Men's Casual Shoes")
 	WebElement category;
 	
-	@FindBy(xpath="(//span[text()='Skechers'])[2]")
+	@FindBy(xpath="(//i[@class='a-icon a-icon-checkbox'])[3]")
 	WebElement Brands;
 	
-	@FindBy(xpath="//span[@id='a-autoid-73']")
+	@FindBy(xpath="(//button[@class='a-button-text a-text-center'])[11]")
 	WebElement size_of_shoe;
 	
 	@FindBy(xpath="(//div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left'])[2]")
 	WebElement delivery_day;
+	
+	@FindBy(xpath="(//input[@type='submit'])[2]")
+	WebElement price;
+	
+	@FindBy(xpath="//span[text()='Sport Shoes for Men |Cultured Round-Toe Shape, Cushioning Technology & Smart Ventilation']")
+	WebElement product_link;
+	
+	@FindBy(xpath="//select[@id='s-result-sort-select']")
+	WebElement drop_down;
+	@FindBy(xpath="//h2[text()='Results']")
+	WebElement results;
+	@FindBy(xpath="//a[@id='nav-orders']")
+	WebElement orders;
 	//step2
 	public void hvover(WebDriver driver) {
 		Actions a1=new Actions(driver);
@@ -76,7 +90,7 @@ public class Amz_HomePage {
 	
 	public void input1() throws InterruptedException {
 		input.sendKeys(Keys.BACK_SPACE);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		input.sendKeys("i");
 		
 	}
@@ -86,7 +100,9 @@ public class Amz_HomePage {
 	}
 	
 	public void search() {
-		searchBar.sendKeys("shoe" +Keys.ENTER);
+		//searchBar.sendKeys("Sport Shoes for Men |Cultured Round-Toe Shape, Cushioning Technology & Smart Ventilation" +Keys.ENTER);
+		//searchBar.sendKeys(Keys.CONTROL+"A"+Keys.DELETE);
+		
 	}
 	
 	public void cat1() {
@@ -107,6 +123,26 @@ public class Amz_HomePage {
 	public void delivery1() {
 		WebDriverWait wait3=new WebDriverWait(driver,Duration.ofSeconds(5));
 		wait3.until(ExpectedConditions.visibilityOf(delivery_day)).click();
+	}
+	
+	public void price1() {
+		WebDriverWait wait4=new WebDriverWait(driver,Duration.ofSeconds(5));
+		wait4.until(ExpectedConditions.visibilityOf(price)).click();
+		
+	}
+	public void productclick() {
+		product_link.click();
+	}
+	public void drop() throws InterruptedException {
+		Select s1=new Select(drop_down);
+		s1.selectByVisibleText("Newest Arrivals");
+		Thread.sleep(2000);
+		s1.selectByVisibleText("Price: High to Low");
+		Thread.sleep(2000);
+		s1.selectByVisibleText("Avg. Customer Review");
+	}
+	public void orderslink() {
+		orders.click();	
 	}
 	
 	//step3

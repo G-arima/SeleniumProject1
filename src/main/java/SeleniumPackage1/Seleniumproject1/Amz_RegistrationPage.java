@@ -23,15 +23,15 @@ public class Amz_RegistrationPage {
 	
 	//step 2
 	
-	public void fn() {
-		firstname.sendKeys("Shugar");
+	/*public void fn() {
+		
 	}
 	public void mobile() {
-		Mobile_number.sendKeys("9872028512");
+		
 	}
 	public void pwd() {
-		password.sendKeys("Admin@123");
-	}
+		
+	}*/
 	public void btn()
 	{
 		verify_btn.click();

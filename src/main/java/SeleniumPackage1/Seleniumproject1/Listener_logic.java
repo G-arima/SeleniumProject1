@@ -13,7 +13,8 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 
 public class Listener_logic implements ITestListener{
-static WebDriver driver;
+	
+  static WebDriver driver;
 	/*@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -22,7 +23,7 @@ static WebDriver driver;
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		
 		ITestListener.super.onTestSuccess(result);
 		Reporter.log("Test Case is passed");
 		TakesScreenshot ts=(TakesScreenshot)driver;
@@ -40,11 +41,13 @@ static WebDriver driver;
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
+		
 		ITestListener.super.onTestFailure(result);
 		Reporter.log("Test case is failed");
 		TakesScreenshot ts=(TakesScreenshot)driver;
+		
 		File source=ts.getScreenshotAs(OutputType.FILE);
+		
 		File destination=new File("C:\\Users\\garim\\OneDrive\\Documents\\AB44_Screenshots\\Fail\\TestFailure"+Math.random()+".PNG");
 		try {
 			FileHandler.copy(source, destination);
