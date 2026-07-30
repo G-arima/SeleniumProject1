@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Tests on ChromeBrowser(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="SeleniumPackage1.Seleniumproject1.Give_Ratings">
+        <methods>
+          <include name="close"/>
+          <include name="launchAmazon"/>
+          <include name="rating" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Give_Ratings -->
+      <class name="SeleniumPackage1.Seleniumproject1.Registration_to_Amazon">
+        <methods>
+          <include name="close"/>
+          <include name="launchAmazon"/>
+          <include name="creating_new_account" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Registration_to_Amazon -->
+      <class name="SeleniumPackage1.Seleniumproject1.Different_Payment_Method">
+        <methods>
+          <include name="close"/>
+          <include name="launchAmazon"/>
+          <include name="paymethod" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Different_Payment_Method -->
+      <class name="SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code">
+        <methods>
+          <include name="close"/>
+          <include name="applyingcoup" invocation-numbers="0"/>
+          <include name="launchAmazon"/>
+        </methods>
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code -->
+      <class name="SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process">
+        <methods>
+          <include name="close"/>
+          <include name="launchAmazon"/>
+          <include name="checkingOut" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process -->
+    </classes>
+  </test> <!-- Tests on ChromeBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->

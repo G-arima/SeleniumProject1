@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 14 23:00:29 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>402 seconds (402360 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Product_Details_Page.productdetails()'><b>productdetails</b><br>Test class: SeleniumPackage1.Seleniumproject1.Product_Details_Page<br>Parameters: Sport Shoes for Men |Cultured Round-Toe Shape, Cushioning Technology & Smart Ventilation<br/>
+<a href="#Output-2037343019" onClick='toggleBox("Output-2037343019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2037343019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2037343019">
+Test case is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at SeleniumPackage1.Seleniumproject1.Amz_ProductDetails.price(Amz_ProductDetails.java:30)
+	at SeleniumPackage1.Seleniumproject1.Product_Details_Page.productdetails(Product_Details_Page.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037343019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037343019'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at SeleniumPackage1.Seleniumproject1.Amz_ProductDetails.price(Amz_ProductDetails.java:30)
+	at SeleniumPackage1.Seleniumproject1.Product_Details_Page.productdetails(Product_Details_Page.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>26</td>
+<td>SeleniumPackage1.Seleniumproject1.Product_Details_Page@71ba6d4e</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Give_Ratings.rating()'><b>rating</b><br>Test class: SeleniumPackage1.Seleniumproject1.Give_Ratings<br>Parameters: 9872129519, Baleno@2024<br/>
+<a href="#Output-1396827930" onClick='toggleBox("Output-1396827930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1396827930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1396827930">
+Test case is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at SeleniumPackage1.Seleniumproject1.Amz_OrderPage.link(Amz_OrderPage.java:29)
+	at SeleniumPackage1.Seleniumproject1.Give_Ratings.rating(Give_Ratings.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1396827930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1396827930'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at SeleniumPackage1.Seleniumproject1.Amz_OrderPage.link(Amz_OrderPage.java:29)
+	at SeleniumPackage1.Seleniumproject1.Give_Ratings.rating(Give_Ratings.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>28</td>
+<td>SeleniumPackage1.Seleniumproject1.Give_Ratings@750e2b97</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code.applyingcoup()'><b>applyingcoup</b><br>Test class: SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code<br>Parameters: 9872129519, Baleno@2024, mamaearth vitamin c facewash<br/>
+<a href="#Output-1251724953" onClick='toggleBox("Output-1251724953", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1251724953" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1251724953">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code@3646a422</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Edit_Profile_Info.edit1()'><b>edit1</b><br>Test class: SeleniumPackage1.Seleniumproject1.Edit_Profile_Info<br>Parameters: 9872129519, Baleno@2024<br/>
+<a href="#Output-940448009" onClick='toggleBox("Output-940448009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-940448009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-940448009">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>SeleniumPackage1.Seleniumproject1.Edit_Profile_Info@1a6d8329</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Searching_with_filters.filters()'><b>filters</b><br>Test class: SeleniumPackage1.Seleniumproject1.Searching_with_filters<br>Parameters: shoe<br/>
+<a href="#Output-1572557043" onClick='toggleBox("Output-1572557043", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1572557043" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1572557043">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>SeleniumPackage1.Seleniumproject1.Searching_with_filters@55a147cc</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart.addtocart()'><b>addtocart</b><br>Test class: SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart<br>Parameters: iphone13pro, adapter iphone 13<br/>
+<a href="#Output-869665662" onClick='toggleBox("Output-869665662", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-869665662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-869665662">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart@3c77d488</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process.checkingOut()'><b>checkingOut</b><br>Test class: SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process<br>Parameters: 9872129519, Baleno@2024, mamaearth vitamin c facewash<br/>
+<a href="#Output-1867568476" onClick='toggleBox("Output-1867568476", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1867568476" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1867568476">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process@2892d68</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Sort_Product.sorting()'><b>sorting</b><br>Test class: SeleniumPackage1.Seleniumproject1.Sort_Product<br>Parameters: shoe<br/>
+<a href="#Output-2124562732" onClick='toggleBox("Output-2124562732", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2124562732" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2124562732">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>SeleniumPackage1.Seleniumproject1.Sort_Product@738dc9b</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Login_to_Amazon.login1()'><b>login1</b><br>Test class: SeleniumPackage1.Seleniumproject1.Login_to_Amazon<br>Parameters: 9872129519, Baleno@2024<br/>
+<a href="#Output-788592721" onClick='toggleBox("Output-788592721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-788592721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-788592721">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>SeleniumPackage1.Seleniumproject1.Login_to_Amazon@1e6a3214</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart.shoppingcart()'><b>shoppingcart</b><br>Test class: SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart<br>Parameters: iphone13pro, adapter iphone 13<br/>
+<a href="#Output-1415638483" onClick='toggleBox("Output-1415638483", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1415638483" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1415638483">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart@63376bed</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Different_Payment_Method.paymethod()'><b>paymethod</b><br>Test class: SeleniumPackage1.Seleniumproject1.Different_Payment_Method<br>Parameters: 9872129519, Baleno@2024, mamaearth vitamin c facewash, 4035627586385001, 9872129519@ybl, 864<br/>
+<a href="#Output-1414953733" onClick='toggleBox("Output-1414953733", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1414953733" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1414953733">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>SeleniumPackage1.Seleniumproject1.Different_Payment_Method@5ab956d7</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential.invalid()'><b>invalid</b><br>Test class: SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential<br>Parameters: 919112663309, hyo$$232!!!<br/>
+<a href="#Output-1947683363" onClick='toggleBox("Output-1947683363", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1947683363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1947683363">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential@368247b9</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Search_for_product.search1()'><b>search1</b><br>Test class: SeleniumPackage1.Seleniumproject1.Search_for_product<br>Parameters: shoe<br/>
+<a href="#Output-2007704254" onClick='toggleBox("Output-2007704254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2007704254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2007704254">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>SeleniumPackage1.Seleniumproject1.Search_for_product@1a942c18</td></tr>
+<tr>
+<td title='SeleniumPackage1.Seleniumproject1.Registration_to_Amazon.creating_new_account()'><b>creating_new_account</b><br>Test class: SeleniumPackage1.Seleniumproject1.Registration_to_Amazon<br>Parameters: TestShugar123, 9874401100, Admin@890<br/>
+<a href="#Output-904208473" onClick='toggleBox("Output-904208473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-904208473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-904208473">
+Test Case is passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>SeleniumPackage1.Seleniumproject1.Registration_to_Amazon@2dc54ad4</td></tr>
+</table><p>
+</body>
+</html>

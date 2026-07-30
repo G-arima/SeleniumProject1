@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="0" total="15" passed="8" failed="5" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Test case is failed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Case is passed]]>
+    </line>
+    <line>
+      <![CDATA[Test case is failed]]>
+    </line>
+    <line>
+      <![CDATA[Test case is failed]]>
+    </line>
+    <line>
+      <![CDATA[Test case is failed]]>
+    </line>
+    <line>
+      <![CDATA[Test case is failed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-07-30T17:41:28 IST" name="Suite" finished-at="2026-07-30T17:51:00 IST" duration-ms="571649">
+    <groups>
+    </groups>
+    <test started-at="2026-07-30T17:41:28 IST" name="Tests on ChromeBrowser" finished-at="2026-07-30T17:51:00 IST" duration-ms="571649">
+      <class name="SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process@5b799640]" started-at="2026-07-30T17:45:55 IST" name="launchAmazon" finished-at="2026-07-30T17:45:57 IST" duration-ms="1921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="checkingOut(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process@5b799640]" started-at="2026-07-30T17:45:57 IST" name="checkingOut" data-provider="inputs" finished-at="2026-07-30T17:46:35 IST" duration-ms="37438" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9872129519]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baleno@2024]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[plum toner]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at SeleniumPackage1.Seleniumproject1.Amz_ProductPage.btn2(Amz_ProductPage.java:43)
+at SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process.checkingOut(Validate_entire_checkout_process.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='a-autoid-9-announce']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1402ddaf7bbdd9d801c0069ea572143c, findElement {value=//button[@id='a-autoid-9-announce'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62844}, goog:processID: 29252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62844/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402ddaf7bbdd9d801c0069ea572143c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test case is failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkingOut -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process@5b799640]" started-at="2026-07-30T17:46:35 IST" name="close" finished-at="2026-07-30T17:46:47 IST" duration-ms="12404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Validate_entire_checkout_process -->
+      <class name="SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential@6f01b95f]" started-at="2026-07-30T17:42:32 IST" name="launchAmazon" finished-at="2026-07-30T17:42:34 IST" duration-ms="2108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="invalid(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential@6f01b95f]" started-at="2026-07-30T17:42:34 IST" name="invalid" data-provider="inputs" finished-at="2026-07-30T17:42:43 IST" duration-ms="9110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9112663309]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hyo$$232!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalid -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential@6f01b95f]" started-at="2026-07-30T17:42:43 IST" name="close" finished-at="2026-07-30T17:42:56 IST" duration-ms="12544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Login_with_invalid_credential -->
+      <class name="SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code@710636b0]" started-at="2026-07-30T17:48:32 IST" name="launchAmazon" finished-at="2026-07-30T17:48:34 IST" duration-ms="2262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method retried="true" signature="applyingcoup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code@710636b0]" started-at="2026-07-30T17:48:34 IST" name="applyingcoup" data-provider="inputs" finished-at="2026-07-30T17:49:13 IST" duration-ms="39139" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9872129519]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baleno@2024]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mamaearth vitamin c facewash]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at SeleniumPackage1.Seleniumproject1.Amz_ProductPage.btn2(Amz_ProductPage.java:43)
+at SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code.applyingcoup(Apply_Coupon_Code.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='a-autoid-9-announce']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3de2950ca56be436ee64ed21c653dbf0, findElement {value=//button[@id='a-autoid-9-announce'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63253}, goog:processID: 45608, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63253/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3de2950ca56be436ee64ed21c653dbf0
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyingcoup -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code@710636b0]" started-at="2026-07-30T17:49:13 IST" name="close" finished-at="2026-07-30T17:49:26 IST" duration-ms="12424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code@710636b0]" started-at="2026-07-30T17:49:26 IST" name="launchAmazon" finished-at="2026-07-30T17:49:27 IST" duration-ms="1968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="applyingcoup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code@710636b0]" started-at="2026-07-30T17:49:27 IST" name="applyingcoup" data-provider="inputs" finished-at="2026-07-30T17:50:06 IST" duration-ms="38704" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9872129519]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baleno@2024]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mamaearth vitamin c facewash]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at SeleniumPackage1.Seleniumproject1.Amz_ProductPage.btn2(Amz_ProductPage.java:43)
+at SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code.applyingcoup(Apply_Coupon_Code.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='a-autoid-9-announce']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e65ea0a89f3bb34cb005d5a330cbd719, findElement {value=//button[@id='a-autoid-9-announce'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54425}, goog:processID: 4752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54425/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e65ea0a89f3bb34cb005d5a330cbd719
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test case is failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- applyingcoup -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code@710636b0]" started-at="2026-07-30T17:50:07 IST" name="close" finished-at="2026-07-30T17:50:19 IST" duration-ms="12437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Apply_Coupon_Code -->
+      <class name="SeleniumPackage1.Seleniumproject1.Sort_Product">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Sort_Product@5965d37]" started-at="2026-07-30T17:44:24 IST" name="launchAmazon" finished-at="2026-07-30T17:44:26 IST" duration-ms="2031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="sorting(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Sort_Product@5965d37]" started-at="2026-07-30T17:44:26 IST" name="sorting" data-provider="testdata" finished-at="2026-07-30T17:44:42 IST" duration-ms="15675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shoe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sorting -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Sort_Product@5965d37]" started-at="2026-07-30T17:44:42 IST" name="close" finished-at="2026-07-30T17:44:54 IST" duration-ms="12456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Sort_Product -->
+      <class name="SeleniumPackage1.Seleniumproject1.Different_Payment_Method">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Different_Payment_Method@6cb107fd]" started-at="2026-07-30T17:46:47 IST" name="launchAmazon" finished-at="2026-07-30T17:46:49 IST" duration-ms="1989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method retried="true" signature="paymethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Different_Payment_Method@6cb107fd]" started-at="2026-07-30T17:46:49 IST" name="paymethod" data-provider="inputs" finished-at="2026-07-30T17:47:27 IST" duration-ms="37407" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9872129519]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baleno@2024]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[plum toner]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4035627586385001]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9872129519@ybl]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[864]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at SeleniumPackage1.Seleniumproject1.Amz_ProductPage.btn2(Amz_ProductPage.java:43)
+at SeleniumPackage1.Seleniumproject1.Different_Payment_Method.paymethod(Different_Payment_Method.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='a-autoid-9-announce']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7d93520304f03d2d280e4f7a25df427, findElement {value=//button[@id='a-autoid-9-announce'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50909}, goog:processID: 7432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50909/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7d93520304f03d2d280e4f7a25df427
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymethod -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Different_Payment_Method@6cb107fd]" started-at="2026-07-30T17:47:27 IST" name="close" finished-at="2026-07-30T17:47:39 IST" duration-ms="12394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Different_Payment_Method@6cb107fd]" started-at="2026-07-30T17:47:39 IST" name="launchAmazon" finished-at="2026-07-30T17:47:41 IST" duration-ms="1885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="paymethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Different_Payment_Method@6cb107fd]" started-at="2026-07-30T17:47:41 IST" name="paymethod" data-provider="inputs" finished-at="2026-07-30T17:48:19 IST" duration-ms="37986" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9872129519]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baleno@2024]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[plum toner]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4035627586385001]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9872129519@ybl]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[864]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='a-autoid-9-announce']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at SeleniumPackage1.Seleniumproject1.Amz_ProductPage.btn2(Amz_ProductPage.java:43)
+at SeleniumPackage1.Seleniumproject1.Different_Payment_Method.paymethod(Different_Payment_Method.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='a-autoid-9-announce']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5877a313b7d66d50b2a8f7f37a3940fc, findElement {value=//button[@id='a-autoid-9-announce'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63049}, goog:processID: 32392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63049/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5877a313b7d66d50b2a8f7f37a3940fc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test case is failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- paymethod -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Different_Payment_Method@6cb107fd]" started-at="2026-07-30T17:48:19 IST" name="close" finished-at="2026-07-30T17:48:32 IST" duration-ms="12370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Different_Payment_Method -->
+      <class name="SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart@7a5ceedd]" started-at="2026-07-30T17:44:54 IST" name="launchAmazon" finished-at="2026-07-30T17:44:56 IST" duration-ms="2012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="addtocart(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart@7a5ceedd]" started-at="2026-07-30T17:44:56 IST" name="addtocart" data-provider="inputs" finished-at="2026-07-30T17:45:12 IST" duration-ms="15039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stainless steel feeding bottle]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[recode mattifying primer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addtocart -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart@7a5ceedd]" started-at="2026-07-30T17:45:12 IST" name="close" finished-at="2026-07-30T17:45:24 IST" duration-ms="12404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Add_Items_to_shopping_cart -->
+      <class name="SeleniumPackage1.Seleniumproject1.Product_Details_Page">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Product_Details_Page@673fdbce]" started-at="2026-07-30T17:43:56 IST" name="launchAmazon" finished-at="2026-07-30T17:43:59 IST" duration-ms="2080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="productdetails(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Product_Details_Page@673fdbce]" started-at="2026-07-30T17:43:59 IST" name="productdetails" data-provider="inputs" finished-at="2026-07-30T17:44:11 IST" duration-ms="12972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sport Shoes for Men]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- productdetails -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Product_Details_Page@673fdbce]" started-at="2026-07-30T17:44:12 IST" name="close" finished-at="2026-07-30T17:44:24 IST" duration-ms="12461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Product_Details_Page -->
+      <class name="SeleniumPackage1.Seleniumproject1.Give_Ratings">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Give_Ratings@3de8f619]" started-at="2026-07-30T17:50:19 IST" name="launchAmazon" finished-at="2026-07-30T17:50:21 IST" duration-ms="1882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="rating(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Give_Ratings@3de8f619]" started-at="2026-07-30T17:50:21 IST" name="rating" data-provider="inputs" finished-at="2026-07-30T17:50:47 IST" duration-ms="26353" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9872129519]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baleno@2024]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@aria-label='Clear']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [649050bbec80935f6325354c1080ed9b, findElement {value=//span[@aria-label='Clear'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50239}, goog:processID: 19136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50239/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 649050bbec80935f6325354c1080ed9b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@aria-label='Clear']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [649050bbec80935f6325354c1080ed9b, findElement {value=//span[@aria-label='Clear'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50239}, goog:processID: 19136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50239/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 649050bbec80935f6325354c1080ed9b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at SeleniumPackage1.Seleniumproject1.Give_Ratings.rating(Give_Ratings.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test case is failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- rating -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Give_Ratings@3de8f619]" started-at="2026-07-30T17:50:47 IST" name="close" finished-at="2026-07-30T17:51:00 IST" duration-ms="12428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Give_Ratings -->
+      <class name="SeleniumPackage1.Seleniumproject1.Searching_with_filters">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Searching_with_filters@1a245833]" started-at="2026-07-30T17:43:19 IST" name="launchAmazon" finished-at="2026-07-30T17:43:21 IST" duration-ms="1871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="filters(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Searching_with_filters@1a245833]" started-at="2026-07-30T17:43:21 IST" name="filters" data-provider="testdata" finished-at="2026-07-30T17:43:44 IST" duration-ms="22624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shoe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- filters -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Searching_with_filters@1a245833]" started-at="2026-07-30T17:43:44 IST" name="close" finished-at="2026-07-30T17:43:56 IST" duration-ms="12450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Searching_with_filters -->
+      <class name="SeleniumPackage1.Seleniumproject1.Login_to_Amazon">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Login_to_Amazon@7d900ecf]" started-at="2026-07-30T17:42:05 IST" name="launchAmazon" finished-at="2026-07-30T17:42:07 IST" duration-ms="2236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="login1(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Login_to_Amazon@7d900ecf]" started-at="2026-07-30T17:42:07 IST" name="login1" data-provider="inputs" finished-at="2026-07-30T17:42:19 IST" duration-ms="11940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9872129519]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baleno@2024]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Login_to_Amazon@7d900ecf]" started-at="2026-07-30T17:42:20 IST" name="close" finished-at="2026-07-30T17:42:32 IST" duration-ms="12296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Login_to_Amazon -->
+      <class name="SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart@4201c465]" started-at="2026-07-30T17:45:24 IST" name="launchAmazon" finished-at="2026-07-30T17:45:26 IST" duration-ms="1928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="shoppingcart(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart@4201c465]" started-at="2026-07-30T17:45:26 IST" name="shoppingcart" data-provider="inputs" finished-at="2026-07-30T17:45:42 IST" duration-ms="16363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stainless steel feeding bottle]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[recode mattifying primer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- shoppingcart -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart@4201c465]" started-at="2026-07-30T17:45:43 IST" name="close" finished-at="2026-07-30T17:45:55 IST" duration-ms="12427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Updating_and_removing_items_cart -->
+      <class name="SeleniumPackage1.Seleniumproject1.Registration_to_Amazon">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Registration_to_Amazon@7c137fd5]" started-at="2026-07-30T17:41:28 IST" name="launchAmazon" finished-at="2026-07-30T17:41:34 IST" duration-ms="6101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="creating_new_account(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Registration_to_Amazon@7c137fd5]" started-at="2026-07-30T17:41:34 IST" name="creating_new_account" data-provider="inputs" finished-at="2026-07-30T17:41:51 IST" duration-ms="16631" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestShugar123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9876123662]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin@078]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ap_password']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7fc179bbec2ef7d1845c01db1dedfe7, findElement {value=//input[@id='ap_password'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50511}, goog:processID: 33588, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50511/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7fc179bbec2ef7d1845c01db1dedfe7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ap_password']"}
+  (Session info: chrome=150.0.7871.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7fc179bbec2ef7d1845c01db1dedfe7, findElement {value=//input[@id='ap_password'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\garim\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50511}, goog:processID: 33588, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50511/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7fc179bbec2ef7d1845c01db1dedfe7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+at SeleniumPackage1.Seleniumproject1.Registration_to_Amazon.creating_new_account(Registration_to_Amazon.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test case is failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- creating_new_account -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Registration_to_Amazon@7c137fd5]" started-at="2026-07-30T17:41:51 IST" name="close" finished-at="2026-07-30T17:42:04 IST" duration-ms="12454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Registration_to_Amazon -->
+      <class name="SeleniumPackage1.Seleniumproject1.Search_for_product">
+        <test-method is-config="true" signature="launchAmazon(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Search_for_product@4007f65e]" started-at="2026-07-30T17:42:56 IST" name="launchAmazon" finished-at="2026-07-30T17:42:58 IST" duration-ms="1804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAmazon -->
+        <test-method signature="search1(java.lang.String)[pri:0, instance:SeleniumPackage1.Seleniumproject1.Search_for_product@4007f65e]" started-at="2026-07-30T17:42:58 IST" name="search1" data-provider="testdata" finished-at="2026-07-30T17:43:07 IST" duration-ms="8921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shoe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- search1 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:SeleniumPackage1.Seleniumproject1.Search_for_product@4007f65e]" started-at="2026-07-30T17:43:07 IST" name="close" finished-at="2026-07-30T17:43:19 IST" duration-ms="12389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- SeleniumPackage1.Seleniumproject1.Search_for_product -->
+    </test> <!-- Tests on ChromeBrowser -->
+  </suite> <!-- Suite -->
+</testng-results>
