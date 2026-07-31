@@ -9,6 +9,7 @@ public class Retry_Logic implements IRetryAnalyzer{
 	
 	@Override
 	public boolean retry(ITestResult result) {
+		
 	
 	if(current_count<number_of_retry)//Write your own logic to retry the failed test case.
 	{
